@@ -28,7 +28,7 @@ class LoginController extends Controller
         return redirect('/');
     }
 
-    public function createIndex() { 
+    public function createUser() {
         return view('users.create');
     }
 

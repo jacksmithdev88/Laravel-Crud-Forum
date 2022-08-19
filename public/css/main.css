@@ -40,13 +40,15 @@ html, body {
  }
 
 
-.post-container { 
+.post-container, .comments-container { 
     border: 1px solid black;
     width: 100%;
     margin: auto;
+    padding: 15px;
     margin-top: 20px;
     border-radius: 1rem;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 button { 
@@ -80,4 +82,25 @@ input, select {
     margin-top: 20px;
     font-size: medium;
     color: gray;
+}
+
+.filter-buttons { 
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-likes { 
+    float: right;
+}
+
+a{ 
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.error-message { 
+    color: red;
+    font-size: larger;
+    font-weight: bold;
 }

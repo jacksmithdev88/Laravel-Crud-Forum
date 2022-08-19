@@ -18,6 +18,13 @@
         
                 <label for="content">Content: </label>
                 <input type="text" name="content" placeholder="Please input some content" required>
+
+                <label for="type">Post Type:</label>
+                <select name="type" id="type">  
+                    @foreach ( $types as $type )
+                        <option value="{{$type->id}}">{{$type->typeName}}</option>
+                    @endforeach
+                </select>
             </div>
             <button type="submit">Submit</button>       
         </form>
